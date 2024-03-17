@@ -4,9 +4,23 @@ html {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.page-background-img {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
 .container {
     display: flex;
     justify-content: space-between;
+}
+
+
+.navbar a {
+    font-size: 150%;
 }
 
 .hero-image {
@@ -16,13 +30,27 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    width: auto;
+    margin-top: 10%;
+}
+
+.hero-image h1 {
+    width: 500%;
+}
+
+.hero-image p {
+    width: 500%;
+}
+
+.hero-image button {
+    width: 200%;
 }
 
 .hero-header {
     text-align: center;
     position: relative;
     padding-top: 10%;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%, -50%);
     color: white;
 }
@@ -30,17 +58,18 @@ html {
 .hero-discription {
     text-align: center;
     position: relative;
-    margin-top: 15%;
-    left: 50%;
+    margin-top: 10%;
+    left: 30%;
     transform: translate(-50%, -50%);
     color: white;
+    font-size: large;
 }
 
 .hero-button {
     text-align: center;
     position: relative;
     margin-top: 1%;
-    left: 50%;
+    left: 42%;
     transform: translate(-50%, -50%);
     color: white;
 }
@@ -108,56 +137,43 @@ html {
     text-align: center;
     position: relative;
     left: 0%;
-    transform: translate(-50%, -50%);
     margin-top: 0%;
     margin-bottom: 5%;
-    animation-name: left;
-    animation-duration: 1s;
-
 }
 
 .cv-text {
     text-align: center;
     position: relative;
     left: 0%;
-    transform: translate(-50%, -50%);
     margin-top: 0%;
     font-size: 150%;
-    animation-name: right;
-    animation-duration: 1s;
 }
 
 .github-img {
     text-align: center;
     position: relative;
     left: 0%;
-    transform: translate(-50%, -50%);
+
     margin-top: 0%;
     margin-bottom: 5%;
-    animation-name: right;
-    animation-duration: 1s;
+
 }
 
 .github-text {
     text-align: center;
     position: relative;
     left: 0%;
-    transform: translate(-50%, -50%);
+
     margin-top: 0%;
     font-size: 150%;
     margin-bottom: 5%;
-    animation-name: left;
-    animation-duration: 1s;
+
 }
 
 .contact-form {
     text-align: center;
-    position: relative;
-    left: 0%;
-    transform: translate(-50%, -50%);
     margin-top: 0%;
-    animation-name: left;
-    animation-duration: 1s;
+    width: auto;
 }
 
 .navbar {
@@ -169,7 +185,7 @@ html {
 .socials {
     font-size: 3rem;
     width: 2.5%;
-    left: 0px;
+    left: 10px;
     position: fixed;
     top: 40%;
 }
@@ -189,10 +205,7 @@ html {
     text-align: center;
     position: relative;
     left: 0%;
-    transform: translate(-50%, -50%);
     margin-top: 0%;
-    animation-name: left;
-    animation-duration: 1s;
     margin-bottom: 5%;
     font-size: 150%;
 
@@ -202,10 +215,7 @@ html {
     text-align: center;
     position: relative;
     left: 0%;
-    transform: translate(-50%, -50%);
     margin-top: 0%;
-    animation-name: left;
-    animation-duration: 1s;
     font-size: 150%;
     width: 50%;
     margin-bottom: 5%;
@@ -213,14 +223,11 @@ html {
 }
 
 .projects-img {
-    text-align: center;
     position: relative;
     left: 0%;
-    transform: translate(-50%, -50%);
     margin-top: 0%;
     margin-bottom: 5%;
-    animation-name: left;
-    animation-duration: 1s;
+
 }
 
 @keyframes left {
@@ -294,5 +301,99 @@ hr {
 @media screen and (max-width: 600px) {
     .socials {
         display: none;
+    }
+
+    .cv-pdf img {
+        width: 20rem;
+        margin-bottom: 5%;
+    }
+
+    .github-img img {
+        width: 20rem;
+    }
+
+    .about-text {
+        text-align: center;
+        transform: translate(0%, 0%);
+        left: 30%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 50%;
+        font-size: 150%;
+        margin-bottom: 5%;
+    }
+
+    .about-details {
+        width: 50%;
+        text-align: center;
+        position: relative;
+        margin-top: 20%;
+        margin-bottom: 5%;
+    }
+
+    .contact-form {
+        width: auto;
+    }
+
+    .projects-img {
+        width: 100%;
+        margin-top: 0%;
+        margin-bottom: 5%;
+        left: 0%;
+        text-align: center;
+    }
+
+    .projects-img p {
+        text-align: center;
+        position: relative;
+        left: 50%;
+        margin-top: 0%;
+        margin-bottom: 5%;
+    }
+
+    .projects-img h2 {
+        text-align: center;
+        position: relative;
+        left: 50%;
+        margin-top: 0%;
+        margin-bottom: 5%;
+    }
+
+    .title h2 {
+        text-decoration: underline;
+        margin-bottom: 5%;
+        margin-top: 3%;
+        text-align: center;
+        position: relative;
+        left: 0%;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .hero-image {
+        margin-top: 20%;
+    }
+
+    .hero-discription {
+        text-align: center;
+        position: relative;
+        color: white;
+        width: 10%;
+    }
+
+    .hero-button {
+        text-align: center;
+        position: relative;
+        color: white;
+        width: 15%;
+    }
+
+    .hero-header {
+        text-align: center;
+        position: relative;
+        color: white;
+        width: 10%;
     }
 }
